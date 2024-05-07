@@ -312,6 +312,20 @@ section {
     bottom: 2.5rem;
 }
 
+.arrow-wrap{
+    position: relative;
+    right: -5rem;
+    bottom: -26rem;
+    float: right;
+}
+
+.arrow-wrapped{
+    position: relative;
+    right: -5rem;
+    bottom: -23rem;
+    float: right;
+}
+
 .arrow{
     height: 2rem;
   }
