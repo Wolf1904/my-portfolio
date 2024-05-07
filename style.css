@@ -475,8 +475,7 @@ article .icon {
 
 .contact-link:hover{
     color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     text-decoration-color: rgb(181, 181, 181);
     transition: all 0.3 ease-in-out;
 }
