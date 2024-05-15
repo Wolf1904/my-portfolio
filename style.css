@@ -490,3 +490,36 @@ footer{
 footer p{
     text-align: center;
 }
+
+
+body {
+    --sb-track-color: #ffffff;
+    --sb-thumb-color: rgb(53,53,53);
+    --sb-size: 12px;
+}
+  
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 13px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 13px;
+}
+  
+@supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+}
+
+#elementid {
+    scrollbar-color: rgb(53,53,53) #fff;
+    scrollbar-width: thin;
+}
