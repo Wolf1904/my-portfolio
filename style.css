@@ -522,17 +522,22 @@ body::-webkit-scrollbar-thumb {
     bottom: 30px;
     right: 30px;
     padding: 10px 15px;
-    background-color: rgb(53, 53, 53);
+    background-color: #f7f7f7;
     color: #fff;
-    border-radius: 5px;
-    border-radius: 1px solid #fff;
+    border-radius: 10px;
+    /* border: 1px solid rgb(163, 163, 163); */
     cursor: pointer;
     transition: all 0.5s ease 0s;
 }
 
 .scrollTop:hover{
-    background-color: #f7f7f7;
-    color: rgb(53, 53, 53);
+    background-color: rgb(53, 53, 53);
+    /* color: rgb(53, 53, 53); */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.icon-top{
+    cursor: pointer;
+    height: 1rem;
 }
