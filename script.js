@@ -13,3 +13,7 @@ scrollbar.addEventListener('scroll', () => {
     const rowIndex = Math.floor(scrollTop / rowHeight);
     scrollbar.scrollTop = rowIndex * rowHeight;
 });
+
+function scrollToTop(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
