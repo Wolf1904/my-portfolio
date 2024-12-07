@@ -101,7 +101,7 @@ nav{
     display: block;
     padding: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
@@ -529,6 +529,7 @@ body::-webkit-scrollbar-thumb {
     height: 1rem;
 }
 
+/* timeline */
 .hexa{
     border: 0px;
     float: left;
@@ -718,4 +719,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 15;
   }
   
+  .desc-text{
+    color: rgb(85, 85, 85);
+    line-height: 1.4;
+  }
   
