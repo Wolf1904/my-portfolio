@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
     <nav id="desktopnav">
         <div class="logo">Rachit</div>
         <div>
@@ -21,6 +22,8 @@
             </ul>
         </div>
     </nav>
+
+  <!-- Hamburger Navbar -->
     <nav id="hamburger-nav">
         <div class="logo">Rachit</div>
         <div class="hamburger-menu">
@@ -40,12 +43,13 @@
         </div>
     </nav>
 
+    <!-- Profile -->
     <section id="profile">
         <div class="section-pic">
             <img src="./assets/profile-pic.png" alt="Rachit profile picture" class="profile-pic">
         </div>
         <div class="section-text">
-            <p class="section-text-p1">Hello I'm</p>
+            <p class="section-text-p1">Hello, I'm</p>
             <h1 class="title">Rachit Agarwal</h1>
             <p class="section-text-p2"></p>
             <div class="btn-container">
@@ -69,6 +73,7 @@
         </div>
     </section>
 
+    <!-- About -->
     <section id="about">
         <p class="section-text-p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -101,40 +106,69 @@
         </div>
     </section>
 
+    <!-- Experience -->
+    <section id="Experience">
+      <p class="section-text-p1">Tracing My</p>
+      <h1 class="title">Work Experience</h1>
+      <ul class="timeline">
+        <!-- Graduation -->
+        <li>
+          <div class="direction-r">
+            <div class="flag-wrapper">
+              <span class="hexa"></span>
+              <span class="flag">Summer Internship</span>
+              <span class="time-wrapper"><span class="time">Jul 2024 - Present</span></span>
+            </div>
+            <div class="desc">Cybersecurity Intern<br>Acuity IT Solutions Pvt. Ltd.<br>Noida<br><br><strong>Cybersecurity Strategy:</strong> Designed and implemented strategies to mitigate emerging threats, emphasizing proactive measures and risk management.<br><br><strong>DevSecOps Testing:</strong> Conducted vulnerability analysis using tools like SonarQube, ensuring security compliance and adherence to industry standards.</div>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+    <!-- Education Timeline -->
     <section id="education">
         <p class="section-text-p1">A Look At My</p>
         <h1 class="title">Educational Background</h1>
-        <div class="education-containers">
-            <div class="details-container">
-                <img
-                    src="./assets/school.png"
-                    alt="School icon"
-                    class="icon"
-                />
-                <h3>Bachelors of Technology in Computer Science and Engineering</h3>
-                <p><br>2025<br>IMS Engineering College<br>Ghaziabad</p>
+        <ul class="timeline">
+          <!-- Graduation -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Bachelors of Technology<br><br>Computer Science and Engineering</span>
+                <span class="time-wrapper"><span class="time">2025</span></span>
+              </div>
+              <div class="desc">IMS Engineering College<br>Ghaziabad</div>
             </div>
-            <div class="details-container">
-                <img
-                    src="./assets/school.png"
-                    alt="School icon"
-                    class="icon"
-                />
-                <h3>Senior Secondary School</h3>
-                <p><br>2021<br>Dayawati Modi Academy 1<br>Meerut</p>
+          </li>
+        
+          <!-- Intermediate -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">Intermediate School</span>
+                <span class="time-wrapper"><span class="time">2021</span></span>
+              </div>
+              <div class="desc">Dayawati Modi Academy 1<br>Meerut</div>
             </div>
-            <div class="details-container">
-                <img
-                    src="./assets/school.png"
-                    alt="School icon"
-                    class="icon"
-                />
-                <h3>Secondary School</h3>
-                <p><br>2019<br>Dayawati Modi Academy 1<br>Meerut</p>
+          </li>
+        
+          <!-- High School -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag">High School</span>
+                <span class="time-wrapper"><span class="time">2019</span></span>
+              </div>
+              <div class="desc">Dayawati Modi Academy 1<br>Meerut</div>
             </div>
-        </div>
+          </li>
+        </ul>
     </section>
 
+    <!-- Courseworks -->
     <section id="courseworks">
         <p class="section-text-p1">Browse Through My</p>
         <h1 class="title">Accredited Courseworks</h1>
@@ -212,6 +246,7 @@
         </div>      
     </section>
 
+    <!-- Skills -->
     <section id="skills">
         <p class="section-text-p1">Explore My</p>
         <h1 class="title">Skills</h1>
@@ -375,6 +410,7 @@
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
         <p class="section-text-p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -417,6 +453,7 @@
         </div> 
     </section>
 
+    <!-- Contact -->
     <section id="contact">
         <p class="section-text-p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -440,6 +477,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -456,6 +494,7 @@
         <p>Copyright &#169; 2024 Rachit. All Rights Reserved.</p>
     </footer>
 
+    <!-- Scroll to top -->
     <div onclick="scrollToTop()" class="scrollTop">
         <img
         src="./assets/arrow-up.png"
@@ -466,6 +505,8 @@
 
     <!---typed js for typing text effect-->
     <script src="https://cdn.tutorialjinni.com/typed.js/2.1.0/typed.umd.min.js"></script>
+    
+    <!-- script -->
     <script src="script.js"></script>
 
     <script>
