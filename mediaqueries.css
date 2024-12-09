@@ -215,3 +215,15 @@
       text-align: left;
     }
   }
+
+@media (max-width: 1200px) {
+  .nav:hover::before{
+      transform: scaleX(0);
+  }
+  .nav:hover{
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+      text-decoration-color: rgb(128, 128, 128);
+      transition: text-decoration 0.3s ease-in-out;
+  }
+}
