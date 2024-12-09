@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
@@ -53,6 +54,7 @@ nav{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     transition: text-shadow 0.3s ease-in-out;
     text-decoration: underline;
+    text-underline-offset: 0.5rem;
     text-decoration-color: rgb(128, 128, 128);
     transition: text-decoration 0.3s ease-in-out;
 }
@@ -704,7 +706,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     margin: 1em 0 0 0;
     padding: 1em;
-    background: rgb(254,254,254);
+    background: rgb(254, 254, 254);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
@@ -724,3 +726,76 @@ body::-webkit-scrollbar-thumb {
     line-height: 1.4;
   }
   
+  .cont-icon:hover{
+      cursor: pointer;
+      height: 1.9rem;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      transition: box-shadow 0.5 ease-in-out;
+    }
+    
+/* skills */
+h2 { text-align: center }
+
+.skill-ul {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  list-style: none;
+  counter-reset: stepnr;
+}
+
+.skill-ul .skill-li {
+  counter-increment: stepnr;
+  width: 12rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2rem);
+  position: relative;
+}
+.skill-ul .skill-li::before,
+.skill-ul .skill-li::after {
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--borderS) solid var(--bgColor);
+  line-height: 1.1;
+}
+.skill-ul .skill-li::before {
+  content: counter(stepnr);
+  color: var(--accent-color);
+  padding-left: 10rem;
+  font-size: 12rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.skill-ul .skill-li::after {
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+}
+
+.skill-ul .skill-li > * { width: 7.5rem }
+.skill-ul .skill-li .skill-icon { font-size: 1.5rem; color: var(--accent-color)}
+.skill-ul .skill-li .skill-title { font-size: 1rem; font-weight: 500; color: rgb(53, 53, 53); }
+.skill-ul .skill-li .skill-descr { font-size: 0.8rem; font-weight: 300; color: rgb(85, 85, 85); }
+
+.skill-body {
+    --color: rgba(53, 53, 53);
+    --bgColor: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    color: var(--color);
+    background: var(--bgColor);
+  }
