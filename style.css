@@ -789,7 +789,7 @@ h2 { text-align: center }
 .skill-ul .skill-li::after {
   inset: 0;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 2rem;
   border: var(--borderS) solid var(--bgColor);
   line-height: 1.1;
 }
