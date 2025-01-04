@@ -38,6 +38,11 @@
     section {
         margin: 0 5%;
     }
+    .section-pic-profile {
+      height: 275px;
+      margin: 0 auto 2rem;
+      justify-content: center;
+  }
     .section-pic {
         width: 275px;
         height: 275px;
@@ -86,6 +91,11 @@
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
+    }
+    .section-pic-profile {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
     }
     .section-pic {
         width: auto;
