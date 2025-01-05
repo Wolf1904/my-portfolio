@@ -275,3 +275,15 @@
       transition: text-decoration 0.3s ease-in-out;
   }
 }
+
+@media (max-width: 768px) {
+  footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+  }
+  .navlinks {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+  }
+}
