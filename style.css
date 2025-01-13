@@ -325,12 +325,21 @@ section {
     line-height: 1.4;
 }
 
-.about-containers{
+.about-me-containers{
    gap: 2rem; 
    margin-bottom: 2rem;
    margin-top: 2rem;
    display: flex;
    flex-wrap: row-wrap;
+   justify-content: space-between;
+}
+
+.about-containers{
+   gap: 2rem; 
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    justify-content: space-between;
 }
 
@@ -433,10 +442,9 @@ article .icon {
     background: rgb(255, 255, 255);
 }
 
-.project-img{
-    border-radius: 2rem;
-    width: 50%;
-    height: 50%;
+.color-container:hover{
+    box-shadow: 0 0 25px rgb(163, 163, 163);
+    transition: all 300ms ease-in-out;
 }
 
 .project-title{
