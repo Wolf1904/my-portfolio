@@ -287,3 +287,24 @@
       text-align: center;
   }
 }
+
+@media (pointer: coarse) {
+    .cursor1,
+    .cursor2 {
+        display: none;
+    }
+
+    * {
+        cursor: auto !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 20px;
+        background: #fff;
+        position: relative;
+    }
+}

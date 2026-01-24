@@ -1,8 +1,9 @@
+const menu = document.getElementById("menuList");
+const nav = document.getElementById("hamburger-nav");
+
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
-    icon.classList.toggle("open");
+    nav.classList.toggle("nav-open");
 }
 
 const scrollbar = document.getElementById('scrollbar');
