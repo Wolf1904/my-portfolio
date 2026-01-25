@@ -926,7 +926,8 @@ h2 { text-align: center }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: calc(var(--borderS) + 2rem);
+  padding-left: calc(var(--borderS) + .0rem);
+  padding-right: calc(var(--borderS) + .001rem);
   position: relative;
 }
 .skill-ul .skill-li::before,
@@ -952,8 +953,8 @@ h2 { text-align: center }
 }
 
 .skill-ul .skill-li > * { width: 7.5rem }
-.skill-ul .skill-li .skill-icon { font-size: 1.5rem; color: var(--accent-color)}
-.skill-ul .skill-li .skill-title { font-size: 1rem; font-weight: 500; color: rgb(53, 53, 53); }
+.skill-ul .skill-li { font-size: 1.5rem; color: var(--accent-color)}
+.skill-ul .skill-li { font-size: 1rem; font-weight: 500; color: rgb(53, 53, 53); }
 .skill-ul .skill-li .skill-descr { font-size: 0.8rem; font-weight: 300; color: rgb(85, 85, 85); }
 
 .skill-body {
@@ -966,4 +967,17 @@ h2 { text-align: center }
     padding: 2rem;
     color: var(--color);
     background: var(--bgColor);
+  }
+
+  .skill-icon { 
+    font-size: 1.5rem; 
+    color: var(--accent-color);
+    text-align: center;
+  }
+
+  .skill-title {
+    text-align: center;
+    font-size: 1rem; 
+    font-weight: 500;
+    color: rgb(53, 53, 53);
   }
