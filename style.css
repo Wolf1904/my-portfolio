@@ -52,7 +52,7 @@ section .details-container:hover,
 section .skill-li:hover,
 section .btn-container:hover,
 nav a.nav:hover,
-#contact .contact-link:hover,
+#contact .contact-link:hover, .contact-icon,
 section .btn-color-1:hover,
 section .btn-color-2:hover, 
 .scrollTop:hover,
@@ -606,10 +606,6 @@ article .icon {
   
 .contact-info-container p {
     font-size: larger;
-}
-  
-.contact-icon {
-    cursor: default;
 }
   
 .email-icon {

@@ -66,7 +66,7 @@
     .contact-info-container {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 0.5rem;
         margin: 1rem;
     }
@@ -145,7 +145,7 @@
     .contact-info-container {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 0.5rem;
         margin: 1rem;
     }
