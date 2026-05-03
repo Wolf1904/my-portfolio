@@ -62,7 +62,7 @@ section .btn-color-2:hover,
 
 /* Hover effect classes applied via JS */
 .cursor-hover {
-    transform: translate(-50%, -50%) scale(1.25);
+    transform: translate(-50%, -50%) scale(.5);
     transition: transform 0.3s ease;
     background-color: #393E46;
     opacity: 0.5;
