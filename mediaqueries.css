@@ -1,310 +1,126 @@
-@media screen and (max-width: 1200px) {
-    #profile {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers,
-    .education-containers {
-        flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-        height: fit-content;
-    }
-  }
-  
-@media screen and (max-width: 1200px) {
-    #desktopnav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    #skills,
-    .skills-details-container {
-        margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-        display: block;
-    }
-    .arrow {
-        display: none;
-    }
+/* ── TABLET (≤ 1024px) ───────────────────────────────── */
+@media (max-width: 1024px) {
     section,
-    .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .section-pic-profile {
-      height: 275px;
-      margin: 0 auto 2rem;
-      justify-content: center;
-  }
-    .section-pic {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    .about-containers {
-        margin-top: 0;
+    #experience > .inner,
+    #courseworks > .inner,
+    #projects > .inner {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
-    .contact-info-upper-container {
-        display: grid;
-        justify-content: center;
-        border-radius: 2rem;
-        border: rgb(53, 53, 53) 0.1rem solid;
-        border-color: rgb(163, 163, 163);
-        background: (250, 250, 250);
-        margin: 2rem auto;
-        padding: 0.5rem;
+    #hero {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
-    .contact-info-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 1rem;
+    nav#main-nav {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    nav#main-nav.scrolled {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image-wrap {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
-  
-@media screen and (max-width: 600px) {
-    #contact,
+
+/* ── MOBILE (≤ 768px) ────────────────────────────────── */
+@media (max-width: 768px) {
+    section,
+    #experience > .inner,
+    #courseworks > .inner,
+    #projects > .inner {
+        padding: 5rem 1.5rem;
+    }
+
+    #hero {
+        flex-direction: column-reverse;
+        padding: 8rem 1.5rem 4rem;
+        gap: 3rem;
+        min-height: auto;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-name { font-size: 3rem; }
+
+    .nav-links { display: none; }
+
+    #hamburger-btn { display: flex; }
+
+    nav#main-nav {
+        padding: 1rem 1.5rem;
+    }
+
+    nav#main-nav.scrolled {
+        padding: .75rem 1.5rem;
+    }
+
     footer {
-        height: 40vh;
-    }
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-    article {
-        font-size: 1rem;
-    }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-        flex-wrap: wrap;
-    }
-    .contact-info-container {
-        margin: 0;
-    }
-    .contact-info-container p,
-    .navlinks li a {
-        font-size: 1rem;
-    }
-    .skills-sub-title {
-        font-size: 1.25rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .navlinks {
+        padding: 1.5rem;
         flex-direction: column;
-        gap: 0.5rem;
         text-align: center;
     }
-    .section-pic-profile {
-        width: auto;
-        height: 46vw;
+
+    .footer-links {
+        flex-wrap: wrap;
         justify-content: center;
     }
-    .section-pic {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
-    }
-    .section-text-p2 {
-        font-size: 1.25rem;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .text-container {
-        text-align: justify;
-    }
 
-    .contact-info-upper-container {
-        display: grid;
-        justify-content: center;
-        border-radius: 2rem;
-        border: rgb(53, 53, 53) 0.1rem solid;
-        border-color: rgb(163, 163, 163);
-        background: (250, 250, 250);
-        margin: 2rem auto;
-        padding: 0.5rem;
-    }
+    .edu-grid { grid-template-columns: 1fr; }
 
-    .contact-info-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin: 1rem;
-    }
-}
-  
+    .about-cards { grid-template-columns: 1fr; }
 
-@media(min-width: 768px){
-    .timeline {
-      width: 660px;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-  
-    .timeline li:after {
-      content: "";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden;
-    }
-    
-    .timeline .hexa {
-      left: -28px;
-      right: auto;
-      top: 8px;
-    }
-  
-    .timeline .direction-l .hexa {
-      left: auto;
-      right: -28px;
-    }
-  
-    .direction-l {
-      position: relative;
-      width: 310px;
-      float: left;
-      text-align: right;
-    }
-  
-    .direction-r {
-      position: relative;
-      width: 310px;
-      float: right;
-      text-align: left;
-    }
-  
-    .flag-wrapper {
-      display: inline-block;
-    }
-    
-    .flag {
-      font-size: 18px;
-    }
-  
-    .direction-l .flag:after {
-      left: auto;
-      right: -16px;
-      top: 50%;
-      margin-top: -8px;
-      border: solid transparent;
-      border-left-color: rgb(254,254,254);
-      border-width: 8px;
-    }
-  
-    .direction-r .flag:after {
-      top: 50%;
-      margin-top: -8px;
-      border: solid transparent;
-      border-right-color: rgb(254,254,254);
-      border-width: 8px;
-      left: -8px;
-    }
-  
-    .time-wrapper {
-      display: inline;
-      vertical-align: middle;
-      margin: 0;
-    }
-  
-    .direction-l .time-wrapper {
-      float: left;
-    }
-  
-    .direction-r .time-wrapper {
-      float: right;
-    }
-  
-    .time {
-      padding: 5px 10px;
-    }
-  
-    .direction-r .desc {
-      margin: 1em 0 0 0.75em;
-    }
-  }
-  
-  @media(min-width: 992px){
-    .timeline {
-      width: 800px;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-  
-    .direction-l {
-      position: relative;
-      width: 380px;
-      float: left;
-      text-align: right;
-    }
-  
-    .direction-r {
-      position: relative;
-      width: 380px;
-      float: right;
-      text-align: left;
-    }
-  }
-
-@media (max-width: 1200px) {
-  .nav:hover::before{
-      transform: scaleX(0);
-  }
-  .nav:hover{
-      text-decoration: underline;
-      text-underline-offset: 0.5rem;
-      text-decoration-color: rgb(128, 128, 128);
-      transition: text-decoration 0.3s ease-in-out;
-  }
+    .hero-scroll-hint { display: none; }
 }
 
-@media (max-width: 768px) {
-  footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-  }
-  .navlinks {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-  }
+/* ── SMALL MOBILE (≤ 480px) ──────────────────────────── */
+@media (max-width: 480px) {
+    .hero-name { font-size: 2.5rem; }
+
+    .section-title { font-size: 2rem; }
+
+    .contact-big { font-size: 2rem; }
+
+    .projects-grid { grid-template-columns: 1fr; }
+
+    .cert-grid { grid-template-columns: 1fr; }
+
+    .hero-actions { flex-direction: column; }
+
+    .btn-primary,
+    .btn-ghost { width: 100%; justify-content: center; }
+
+    .contact-links { flex-direction: column; align-items: center; }
 }
 
+/* ── TOUCH DEVICES ───────────────────────────────────── */
 @media (pointer: coarse) {
-    .cursor1,
-    .cursor2 {
+    .cur-ring,
+    .cur-dot {
         display: none;
     }
 
     * {
         cursor: auto !important;
-    }
-}
-
-@media (max-width: 600px) {
-    #hamburger-nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 20px;
-        background: #fff;
-        position: relative;
     }
 }

@@ -5,632 +5,373 @@
     <link rel="shortcut icon" type="x-icon" href="assets/code1.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rachit Agarwal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-    <nav id="desktopnav">
-        <div class="logo">Rachit</div>
-        <div>
-            <ul class="navlinks">
-                <li><a href="#about" class="nav">About</a></li>
-                <li><a href="#experience" class="nav">Experience</a></li>
-                <li><a href="#education" class="nav">Education</a></li>
-                <li><a href="#courseworks" class="nav">Courseworks</a></li>
-                <li><a href="#skills" class="nav">Skills</a></li>
-                <li><a href="#projects" class="nav">Projects</a></li>
-                <li><a href="#contact" class="nav">Contact</a></li>
-            </ul>
+
+<!-- Custom Cursor -->
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<!-- Desktop Nav -->
+<nav id="main-nav">
+    <a href="#hero" class="logo-wordmark">Rachit <em>Agarwal</em></a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#courseworks">Courseworks</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="hamburger-btn" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#education" class="mob-link">Education</a>
+    <a href="#courseworks" class="mob-link">Courseworks</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-text">
+        <p class="hero-eyebrow">Portfolio · 2026</p>
+        <h1 class="hero-name">
+            Rachit
+            <em>Agarwal</em>
+        </h1>
+        <p class="hero-role" id="typed-role"></p>
+        <p><br></p>
+        <p class="hero-bio">
+            Early-career Software Engineer with a strong interest in backend development and secure systems. I build reliable, scalable, and impactful software — one elegant solution at a time.
+        </p>
+        <div class="hero-actions">
+            <a href="https://drive.google.com/file/d/1fCH51BEu2idvxk3CJFkbkR8E3RS0v24L/view?usp=sharing" target="_blank" class="btn-primary">
+                Download CV ↓
+            </a>
+            <a href="#contact" class="btn-ghost">
+                Say Hello →
+            </a>
         </div>
-    </nav>
-
-  <!-- Hamburger Navbar -->
-    <nav id="hamburger-nav">
-        <div class="logo">Rachit</div>
-
-        <div class="hamburger-menu">
-            <div class="nav-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul class="menu-links" id="menuList">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-                <li><a href="#courseworks" onclick="toggleMenu()">Courseworks</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Profile -->
-    <section id="profile">
-        <div class="section-pic-profile">
-            <img src="./assets/profile-pic.png" alt="Rachit profile picture" class="profile-pic">
-        </div>
-        <div class="section-text">
-            <p class="section-text-p1">Hi, I'm</p>
-            <h1 class="title">Rachit Agarwal</h1>
-            <p class="section-text-p2"></p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1fCH51BEu2idvxk3CJFkbkR8E3RS0v24L/view?usp=sharing')">Download CV 
-                    <img src="/assets/download.png" alt="download cv" class="profile-icon-0">
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Say hello 
-                    <img src="/assets/send.png" alt="contact" class="profile-icon">
-                </button>
-            </div>
-            <!-- <div id="socials-container">
-                <img
-                  src="./assets/linkedin.png"
-                  alt="My LinkedIn profile"
-                  class="icon cont-icon"
-                  onclick="location.href='https://linkedin.com/in/rachit-agarwal-963773188'"
-                />
-                <img
-                  src="./assets/github.png"
-                  alt="My Github profile"
-                  class="icon cont-icon"
-                  onclick="location.href='https://github.com/Wolf1904'"
-                />
-              </div> -->
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <p class="section-text-p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section-pic">
-                <img 
-                    src="./assets/about-pic.png"
-                    alt="Profile pic"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-me-containers">
-                    <div class="details-container">
-                        <img 
-                            src="./assets/experience.png"
-                            alt="Education icon"
-                            class="icon"
-                        />
-                        <h3>Experience</h3>
-                        <p>Cyber Security Intern</p>
-                        <p>Associate Software Engineer</p>
-                    </div>
-                    <div class="details-container">
-                        <img 
-                            src="./assets/school.png"
-                            alt="Education icon"
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>Secondary School<br>Senior Secondary School<br>Bachelors of Technology in Computer Science and Engineering</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p class="about">
-                      I’m an early-career <strong>Software Engineer</strong> with a strong interest in <strong>backend development and secure systems</strong>. I enjoy working with Java and Spring Boot, learning how large-scale applications are designed, and continuously improving my problem-solving skills.
-                      Curious by nature and driven by growth, I approach every project as a learning opportunity whether I’m collaborating with a team or exploring solutions independently. My goal is to build reliable, secure, and impactful software while growing into a well-rounded engineer.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <p class="section-text-p1">Tracing My</p>
-      <h1 class="title">Work Experience</h1>
-      <ul class="timeline">
-        <!-- Associate Software Engineer -->
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">Software Engineer</span>
-              <span class="time-wrapper"><span class="time">Aug 2025 - Present</span></span>
-            </div>
-            <div class="desc desc-text">Associate Software Engineer<br>Acuity IT Solutions Pvt. Ltd.<br>Noida<br><br><strong>Backend Engineer (Java & Spring Boot):</strong> Developing scalable and secure <strong>RESTful APIs</strong> using Java Spring Boot, with a strong focus on clean architecture, performance optimization, and building backend systems that power fast, reliable applications.</div>
-          </div>
-        </li>
-        <!-- Intern -->
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="hexa"></span>
-              <span class="flag">Summer Internship</span>
-              <span class="time-wrapper"><span class="time">Jul 2024 - Sep 2024</span></span>
-            </div>
-            <div class="desc desc-text">Cybersecurity Intern<br>Acuity IT Solutions Pvt. Ltd.<br>Noida<br><br><strong>Cybersecurity Strategy:</strong> Designed and implemented strategies to mitigate emerging threats, emphasizing proactive measures and risk management.<br><br><strong>DevSecOps Testing:</strong> Conducted vulnerability analysis using tools like SonarQube, ensuring security compliance and adherence to industry standards.</div>
-          </div>
-        </li>
-      </ul>
-  </section>
-
-    <!-- Education Timeline -->
-    <section id="education">
-        <p class="section-text-p1">A Look At My</p>
-        <h1 class="title">Educational Background</h1>
-        <ul class="timeline">
-          <!-- Graduation -->
-          <li>
-            <div class="direction-r">
-              <div class="flag-wrapper">
-                <span class="hexa"></span>
-                <span class="flag">Bachelors of Technology<br><br>Computer Science and Engineering</span>
-                <span class="time-wrapper"><span class="time">2025</span></span>
-              </div>
-              <!-- <div class="desc desc-text">IMS Engineering College<br>Ghaziabad</div> -->
-              <div class="desc desc-text">Dr. A. P. J. Abdul Kalam Technical University</div>
-            </div>
-          </li>
-        
-          <!-- Intermediate -->
-          <li>
-            <div class="direction-l">
-              <div class="flag-wrapper">
-                <span class="hexa"></span>
-                <span class="flag">Intermediate School</span>
-                <span class="time-wrapper"><span class="time">2021</span></span>
-              </div>
-              <div class="desc desc-text">Dayawati Modi Academy 1<br>Meerut</div>
-            </div>
-          </li>
-        
-          <!-- High School -->
-          <li>
-            <div class="direction-r">
-              <div class="flag-wrapper">
-                <span class="hexa"></span>
-                <span class="flag">High School</span>
-                <span class="time-wrapper"><span class="time">2019</span></span>
-              </div>
-              <div class="desc desc-text">Dayawati Modi Academy 1<br>Meerut</div>
-            </div>
-          </li>
-        </ul>
-    </section>
-
-    <!-- Courseworks -->
-    <section id="courseworks">
-        <p class="section-text-p1">Browse Through My</p>
-        <h1 class="title">Accredited Courseworks</h1>
-        <div class="certifciations-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>The Complete 2025 Software Testing Bootcamp</h3>
-                    <p><br>Udemy<br>Issued in: Sept 2025</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.udemy.com/certificate/UC-4df683e9-b3c0-4e1c-8c61-2602530feffe/'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>Hands-on Technical skills for IT Support Learners</h3>
-                    <p><br>Udemy<br>Issued in: Apr 2025</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.udemy.com/certificate/UC-df193b49-67d2-4c2e-90a5-6ed5438a9ffb/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>Cybersecurity Analyst Job Simulation</h3>
-                    <p><br>Tata Group<br>Issued in: May 2024</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_Tata%20Group_rGyyeWrK5uJyQe7J4_1716592629527_completion_certificate.pdf'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>Networking Basics</h3>
-                    <p><br>Cisco<br>Issued in: January 2024</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://www.credly.com/badges/1141717a-0aed-46cd-ad82-dee9a763b161/linked_in_profile'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>Software Engineering Virtual skills Program</h3>
-                    <p><br>Goldman Sachs<br>Issued in: August 2023</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_rGyyeWrK5uJyQe7J4_1691937677519_completion_certificate.pdf'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <img
-                        src="./assets/certificate.png"
-                        alt="Certificate icon"
-                        class="icon"
-                    />
-                    <h3>Describe the basic concepts of cybersecurity</h3>
-                    <p><br>Microsoft<br>Issued in: May 2023</p>
-                    <br>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://learn.microsoft.com/api/achievements/share/en-us/RACHITAGARWAL-4203/KTGHAQXB?sharingId=8190DAE3AA1DB7FB'">
-                            Show Credential
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>      
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <p class="section-text-p1">Explore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills skill-body">
-              <h2>Programming Languages</h2>
-              <ul class="skill-ul">
-                  <!-- <li class="skill-li" >
-                      <div class="skill-icon"><img src="/assets/html-5.png" alt="html" class="icon"></div>
-                      <div class="skill-title">HTML</div>
-                      <div class="skill-descr">Skilled</div>
-                  </li> -->
-                  <!-- <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/css-3.png" alt="css" class="icon"></div>
-                      <div class="skill-title">CSS</div>
-                      <div class="skill-descr">Basic</div>
-                  </li> -->
-                  <!-- <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/js.png" alt="js" class="icon"></div>
-                      <div class="skill-title">JavaScript</div>
-                      <div class="skill-descr">Basic</div>
-                  </li> -->
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/python.png" alt="python" class="icon"></div>
-                      <div class="skill-title">Python</div>
-                      <!-- <div class="skill-descr">Intermediate</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/c++.png" alt="c++" class="icon"></div>
-                      <div class="skill-title">C++</div>
-                      <!-- <div class="skill-descr">Intermediate</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/C.png" alt="c" class="icon"></div>
-                      <div class="skill-title">C</div>
-                      <!-- <div class="skill-descr">Intermediate</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/java.png" alt="java" class="icon"></i></div>
-                      <div class="skill-title">Java</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/terminal.png" alt="shell" class="icon"></div>
-                      <div class="skill-title">Shell Script</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/sql.png" alt="sql" class="icon"></div>
-                      <div class="skill-title">SQL</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-              </ul>
-              <br>
-              <h2>Tools and Technologies</h2>
-              <ul class="skill-ul">
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/Streamlit.png" alt="Streamlit" class="icon"></div>
-                      <div class="skill-title">Streamlit</div>
-                      <!-- <div class="skill-descr">Skilled</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/icons8-cisco-packet-tracer-50.png" alt="packet tracer" class="icon"></div>
-                      <div class="skill-title">Cisco Packet Tracer</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/networking.png" alt="networking" class="icon"></div>
-                      <div class="skill-title">Computer Networking</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <!-- <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/Canva.png" alt="Canva" class="icon"></div>
-                      <div class="skill-title">Canva</div>
-                      <div class="skill-descr">Intermediate</div>
-                  </li> -->
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/git.png" alt="git" class="icon"></i></div>
-                      <div class="skill-title">Git</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/zaproxy.png" alt="OWASP ZAP" class="icon"></div>
-                      <div class="skill-title">OWASP ZAP</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/SonarQube.png" alt="SonarQube" class="icon"></div>
-                      <div class="skill-title">SonarQube</div>
-                      <!-- <div class="skill-descr">Intermediate</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/Linux.png" alt="Linux" class="icon"></div>
-                      <div class="skill-title">Linux</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/virtualbox_logo_icon_169253.png" alt="VirtualBox" class="icon"></div>
-                      <div class="skill-title">VirtualBox</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/azure-devops-svgrepo-com.png" alt="Azure DevOps" class="icon"></div>
-                      <div class="skill-title">Azure DevOps</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-                  <li class="skill-li">
-                      <div class="skill-icon"><img src="/assets/spring-boot.png" alt="Spring Boot" class="icon"></div>
-                      <div class="skill-title">Spring Boot</div>
-                      <!-- <div class="skill-descr">Basic</div> -->
-                  </li>
-              </ul>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-        <p class="section-text-p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <h2 class="skills-sub-title project-title">CyberMatrix</h2>
-                    <div class="descrip"><p>CyberMatrix is a Streamlit-based career guidance application focused on cybersecurity. It helps users explore career paths, gain insights into roles, and access tailored resources to navigate the cybersecurity domain effectively.</p><br></div>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Wolf1904/CyberMatrix'">
-                            Github
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <h2 class="skills-sub-title project-title">TurboTrove</h2>
-                    <div class="descrip"><p>TurboTrove is a Java-based application designed to streamline inventory and employee management for car showrooms. It features modules for managing cars, employees, and showroom operations, offering an efficient solution for automotive business needs.</p><br></div>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Wolf1904/turbotrove'">
-                            Github
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <h2 class="skills-sub-title project-title">DefenderBytes Antivirus Scanner</h2>
-                    <div class="descrip"><p>DefenderBytes Antivirus Software is a robust security solution designed to enhance system protection and user experience. It integrates advanced scanning techniques and efficient data management, offering comprehensive antivirus functionalities tailored for modern cybersecurity needs.</p><br></div>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Wolf1904/DefenderBytes'">
-                            Github
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <h2 class="skills-sub-title project-title">Troubleshooting Knowledge Base</h2>
-                    <div class="descrip"><p>A repository of real-world system issues and fixes across <strong>Linux, Windows, and GitHub</strong>. Provides quick, practical solutions for troubleshooting, CTF challenges, and day-to-day debugging.</p><br></div>
-                    <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/Wolf1904/Troubleshooting'">
-                            Github
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <p class="section-text-p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                    src="./assets/email.png"
-                    alt="Email icon"
-                    class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:rachit19430@gmail.com" class="contact-link">rachit19430@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                    src="./assets/linkedin.png"
-                    alt="LinkedIn icon"
-                    class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/rachit-agarwal-963773188" class="contact-link">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                    src="./assets/github.png"
-                    alt="GitHub icon"
-                    class="icon contact-icon"
-                />
-                <p><a href="https://github.com/Wolf1904" class="contact-link">GitHub</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="navlinks">
-                    <li><a href="#about" class="nav">About</a></li>
-                    <li><a href="#experience" class="nav">Experience</a></li>
-                    <li><a href="#education" class="nav">Education</a></li>
-                    <li><a href="#courseworks" class="nav">Courseworks</a></li>
-                    <li><a href="#skills" class="nav">Skills</a></li>
-                    <li><a href="#projects" class="nav">Projects</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2026 Rachit.</p>
-        <p>&#60;&#47;&#62;</p>
-    </footer>
-    
-    <!-- Scroll to top -->
-    <div onclick="scrollToTop()" class="scrollTop">
-        <img
-        src="./assets/arrow-up.png"
-        alt="Top"
-        class="icon-top"
-        />
     </div>
+    <div class="hero-image">
+        <img src="./assets/profile-pic.png" alt="Rachit Agarwal">
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+        <span></span>
+        scroll
+    </div>
+</section>
 
-    <!-- Custom Cursor -->
-    <div class="cursor1"></div>
-    <div class="cursor2"></div>
+<div class="section-rule"></div>
 
-    <!---typed js for typing text effect-->
-    <script src="https://cdn.tutorialjinni.com/typed.js/2.1.0/typed.umd.min.js"></script>
-    
-    <!-- script -->
-    <script src="script.js"></script>
+<!-- ABOUT  -->
+<section id="about">
+    <div class="reveal">
+        <p class="section-label">01 / About</p>
+        <h2 class="section-title">The person<br><em>behind the code</em></h2>
+    </div>
+    <div class="about-grid reveal">
+        <div class="about-image-wrap">
+            <img src="./assets/about-pic.png" alt="Rachit — about photo">
+        </div>
+        <div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-card-icon">⚡</div>
+                    <h3>Experience</h3>
+                    <p>Cybersecurity Intern &amp; Associate Software Engineer at Acuity IT Solutions</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>B.Tech in Computer Science &amp; Engineering — AKTU, 2025</p>
+                </div>
+            </div>
+            <p class="about-bio">
+                I'm an early-career <strong>Software Engineer</strong> with a strong interest in <strong>backend development and secure systems</strong>. I enjoy working with Java and Spring Boot, learning how large-scale applications are designed, and continuously improving my problem-solving skills.
+                <br><br>
+                Curious by nature and driven by growth, I approach every project as a learning opportunity — whether I'm collaborating with a team or exploring solutions independently. My goal is to build <strong>reliable, secure, and impactful software</strong> while growing into a well-rounded engineer.
+            </p>
+        </div>
+    </div>
+</section>
 
-    <script>
-        var typed=new Typed(".section-text-p2",{
-            strings:["Software Engineer", "Cybersecurity Enthusiast", "DevSecOps Enthusiast"],
-            typeSpeed:50,
-            backSpeed:50,
-            startDelay:500,
-            backDelay:1000,
-            loop:true,
-            showCursor: false,
-            smartBackspace: true,
-        })
+<div class="section-rule"></div>
 
-        const cursor1 = document.querySelector('.cursor1');
-        const cursor2 = document.querySelector('.cursor2');
+<!-- EXPERIENCE -->
+<section id="experience" style="max-width:100%;padding:0;">
+    <div class="inner">
+        <div class="reveal">
+            <p class="section-label">02 / Experience</p>
+            <h2 class="section-title">Where I've<br><em>done the work</em></h2>
+        </div>
+        <div class="timeline-v reveal">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-tag">Full-time</span>
+                    <span class="timeline-period">Aug 2025 – Present</span>
+                </div>
+                <h3 class="timeline-role">Associate Software Engineer</h3>
+                <p class="timeline-org">Acuity IT Solutions Pvt. Ltd. · Noida</p>
+                <p class="timeline-desc">
+                    <strong>Backend Engineer (Java &amp; Spring Boot)</strong> — Developing scalable and secure RESTful APIs with a strong focus on clean architecture, performance optimisation, and building backend systems that power fast, reliable applications.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta">
+                    <span class="timeline-tag">Internship</span>
+                    <span class="timeline-period">Jul 2024 – Sep 2024</span>
+                </div>
+                <h3 class="timeline-role">Cybersecurity Intern</h3>
+                <p class="timeline-org">Acuity IT Solutions Pvt. Ltd. · Noida</p>
+                <p class="timeline-desc">
+                    <strong>Cybersecurity Strategy</strong> — Designed and implemented strategies to mitigate emerging threats, emphasising proactive measures and risk management.
+                    <br><br>
+                    <strong>DevSecOps Testing</strong> — Conducted vulnerability analysis using SonarQube, ensuring security compliance and adherence to industry standards.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        let mouseX = 0;
-        let mouseY = 0;
-        let posX = 0;
-        let posY = 0;
-        const speed = 0.2; // smaller = more lag
+<div class="section-rule"></div>
 
-        // Update mouse coordinates
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-            cursor2.style.left = mouseX + 'px';
-            cursor2.style.top = mouseY + 'px';
-        });
+<!-- EDUCATION -->
+<section id="education">
+    <div class="reveal">
+        <p class="section-label">03 / Education</p>
+        <h2 class="section-title">Academic<br><em>foundations</em></h2>
+    </div>
+    <div class="edu-grid reveal">
+        <div class="edu-card" data-year="'25">
+            <p class="edu-card-badge">B.Tech · Computer Science &amp; Engineering</p>
+            <h3>Dr. A.P.J. Abdul Kalam Technical University</h3>
+            <p>IMS Engineering College, Ghaziabad<br>Graduated 2025</p>
+        </div>
+        <div class="edu-card" data-year="'21">
+            <p class="edu-card-badge">Senior Secondary · Class XII</p>
+            <h3>Dayawati Modi Academy 1</h3>
+            <p>Meerut<br>Passed 2021</p>
+        </div>
+        <div class="edu-card" data-year="'19">
+            <p class="edu-card-badge">Secondary · Class X</p>
+            <h3>Dayawati Modi Academy 1</h3>
+            <p>Meerut<br>Passed 2019</p>
+        </div>
+    </div>
+</section>
 
-        // Animate cursor1 (lag effect)
-        function animate() {
-            posX += (mouseX - posX) * speed;
-            posY += (mouseY - posY) * speed;
-            cursor1.style.left = posX + 'px';
-            cursor1.style.top = posY + 'px';
-            requestAnimationFrame(animate);
-        }
-        animate();
+<div class="section-rule"></div>
 
-        // Add hover effect for interactive elements
-        const interactives = document.querySelectorAll('a, button, .btn-container');
+<!-- COURSEWORKS -->
+<section id="courseworks" style="max-width:100%;padding:0;">
+    <div class="inner">
+        <div class="reveal">
+            <p class="section-label">04 / Courseworks</p>
+            <h2 class="section-title">Accredited<br><em>certifications</em></h2>
+        </div>
+        <div class="cert-grid reveal">
+            <div class="cert-card" onclick="window.open('https://www.udemy.com/certificate/UC-4df683e9-b3c0-4e1c-8c61-2602530feffe/')">
+                <p class="cert-issuer">Udemy</p>
+                <p class="cert-name">The Complete 2025 Software Testing Bootcamp</p>
+                <div class="cert-footer">
+                    <span>Sep 2025</span>
+                    <a href="https://www.udemy.com/certificate/UC-4df683e9-b3c0-4e1c-8c61-2602530feffe/" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+            <div class="cert-card" onclick="window.open('https://www.udemy.com/certificate/UC-df193b49-67d2-4c2e-90a5-6ed5438a9ffb/')">
+                <p class="cert-issuer">Udemy</p>
+                <p class="cert-name">Hands-on Technical Skills for IT Support Learners</p>
+                <div class="cert-footer">
+                    <span>Apr 2025</span>
+                    <a href="https://www.udemy.com/certificate/UC-df193b49-67d2-4c2e-90a5-6ed5438a9ffb/" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+            <div class="cert-card" onclick="window.open('https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/gmf3ypEXBj2wvfQWC_Tata%20Group_rGyyeWrK5uJyQe7J4_1716592629527_completion_certificate.pdf')">
+                <p class="cert-issuer">Tata Group</p>
+                <p class="cert-name">Cybersecurity Analyst Job Simulation</p>
+                <div class="cert-footer">
+                    <span>May 2024</span>
+                    <a href="#" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+            <div class="cert-card" onclick="window.open('https://www.credly.com/badges/1141717a-0aed-46cd-ad82-dee9a763b161/linked_in_profile')">
+                <p class="cert-issuer">Cisco</p>
+                <p class="cert-name">Networking Basics</p>
+                <div class="cert-footer">
+                    <span>Jan 2024</span>
+                    <a href="https://www.credly.com/badges/1141717a-0aed-46cd-ad82-dee9a763b161" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+            <div class="cert-card" onclick="window.open('https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_rGyyeWrK5uJyQe7J4_1691937677519_completion_certificate.pdf')">
+                <p class="cert-issuer">Goldman Sachs</p>
+                <p class="cert-name">Software Engineering Virtual Skills Program</p>
+                <div class="cert-footer">
+                    <span>Aug 2023</span>
+                    <a href="#" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+            <div class="cert-card" onclick="window.open('https://learn.microsoft.com/api/achievements/share/en-us/RACHITAGARWAL-4203/KTGHAQXB?sharingId=8190DAE3AA1DB7FB')">
+                <p class="cert-issuer">Microsoft</p>
+                <p class="cert-name">Describe the Basic Concepts of Cybersecurity</p>
+                <div class="cert-footer">
+                    <span>May 2023</span>
+                    <a href="https://learn.microsoft.com/api/achievements/share/en-us/RACHITAGARWAL-4203/KTGHAQXB" target="_blank" onclick="event.stopPropagation()">View →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        interactives.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor1.classList.add('cursor-hover');
-                cursor2.classList.add('cursor2-hover');
-            });
-            el.addEventListener('mouseleave', () => {
-                cursor1.classList.remove('cursor-hover');
-                cursor2.classList.remove('cursor2-hover');
-            });
-        });
+<div class="section-rule"></div>
 
-        const interactives2 = document.querySelectorAll('.btn-color-1, .btn-color-2, .scrollTop');
+<!-- SKILLS -->
+<section id="skills">
+    <div class="reveal">
+        <p class="section-label">05 / Skills</p>
+        <h2 class="section-title">Tools of<br><em>my craft</em></h2>
+    </div>
+    <div class="reveal">
+        <div class="skills-group">
+            <p class="skills-group-label">Programming Languages</p>
+            <div class="skill-chips">
+                <span class="chip"><img src="/assets/python.png" alt="">Python</span>
+                <span class="chip"><img src="/assets/c++.png" alt="">C++</span>
+                <span class="chip"><img src="/assets/C.png" alt="">C</span>
+                <span class="chip"><img src="/assets/java.png" alt="">Java</span>
+                <span class="chip"><img src="/assets/terminal.png" alt="">Shell Script</span>
+                <span class="chip"><img src="/assets/sql.png" alt="">SQL</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <p class="skills-group-label">Tools &amp; Technologies</p>
+            <div class="skill-chips">
+                <span class="chip"><img src="/assets/spring-boot.png" alt="">Spring Boot</span>
+                <span class="chip"><img src="/assets/git.png" alt="">Git</span>
+                <span class="chip"><img src="/assets/Linux.png" alt="">Linux</span>
+                <span class="chip"><img src="/assets/azure-devops-svgrepo-com.png" alt="">Azure DevOps</span>
+                <span class="chip"><img src="/assets/SonarQube.png" alt="">SonarQube</span>
+                <span class="chip"><img src="/assets/zaproxy.png" alt="">OWASP ZAP</span>
+                <span class="chip"><img src="/assets/networking.png" alt="">Computer Networking</span>
+                <span class="chip"><img src="/assets/icons8-cisco-packet-tracer-50.png" alt="">Cisco Packet Tracer</span>
+                <span class="chip"><img src="/assets/virtualbox_logo_icon_169253.png" alt="">VirtualBox</span>
+                <span class="chip"><img src="/assets/Streamlit.png" alt="">Streamlit</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-        interactives2.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor1.classList.add('cursor-hover-btn');
-                cursor2.classList.add('cursor2-hover-btn');
-            });
-            el.addEventListener('mouseleave', () => {
-                cursor1.classList.remove('cursor-hover-btn');
-                cursor2.classList.remove('cursor2-hover-btn');
-            });
-        });
+<div class="section-rule"></div>
 
-        const interactives3 = document.querySelectorAll('.profile-pic, .about-pic');
+<!-- PROJECTS -->
+<section id="projects" style="max-width:100%;padding:0;">
+    <div class="inner">
+        <div class="reveal">
+            <p class="section-label">06 / Projects</p>
+            <h2 class="section-title">Things I've<br><em>built</em></h2>
+        </div>
+        <div class="projects-grid reveal">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">CyberMatrix</h3>
+                    <a href="https://github.com/Wolf1904/CyberMatrix" target="_blank" class="project-arrow" title="GitHub">↗</a>
+                </div>
+                <p class="project-desc">A Streamlit-based career guidance application focused on cybersecurity. Helps users explore career paths, gain insights into roles, and access tailored resources to navigate the cybersecurity domain effectively.</p>
+                <div class="project-tags">
+                    <span class="ptag">Python</span>
+                    <span class="ptag">Streamlit</span>
+                    <span class="ptag">Cybersecurity</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">TurboTrove</h3>
+                    <a href="https://github.com/Wolf1904/turbotrove" target="_blank" class="project-arrow" title="GitHub">↗</a>
+                </div>
+                <p class="project-desc">A Java-based application designed to streamline inventory and employee management for car showrooms. Features modules for managing cars, employees, and showroom operations.</p>
+                <div class="project-tags">
+                    <span class="ptag">Java</span>
+                    <span class="ptag">Inventory</span>
+                    <span class="ptag">Management</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">DefenderBytes Antivirus</h3>
+                    <a href="https://github.com/Wolf1904/DefenderBytes" target="_blank" class="project-arrow" title="GitHub">↗</a>
+                </div>
+                <p class="project-desc">A robust security solution designed to enhance system protection and user experience. Integrates advanced scanning techniques and efficient data management for comprehensive antivirus functionality.</p>
+                <div class="project-tags">
+                    <span class="ptag">Security</span>
+                    <span class="ptag">Scanning</span>
+                    <span class="ptag">DevSecOps</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">Troubleshooting Knowledge Base</h3>
+                    <a href="https://github.com/Wolf1904/Troubleshooting" target="_blank" class="project-arrow" title="GitHub">↗</a>
+                </div>
+                <p class="project-desc">A repository of real-world system issues and fixes across Linux, Windows, and GitHub. Provides quick, practical solutions for troubleshooting, CTF challenges, and day-to-day debugging.</p>
+                <div class="project-tags">
+                    <span class="ptag">Linux</span>
+                    <span class="ptag">Windows</span>
+                    <span class="ptag">CTF</span>
+                    <span class="ptag">Docs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        interactives3.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor1.classList.add('cursor-hover-pic');
-                cursor2.classList.add('cursor2-hover-pic');
-            });
-            el.addEventListener('mouseleave', () => {
-                cursor1.classList.remove('cursor-hover-pic');
-                cursor2.classList.remove('cursor2-hover-pic');
-            });
-        });
-    </script>
+<div class="section-rule"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="reveal">
+        <h2 class="contact-big">Let's build<br><em>something great</em></h2>
+        <p class="contact-sub">Whether it's a collaboration, an opportunity, or just a hello — I'm always happy to connect.</p>
+        <div class="contact-links">
+            <a href="mailto:rachit19430@gmail.com" class="btn-primary">rachit19430@gmail.com</a>
+            <a href="https://www.linkedin.com/in/rachit-agarwal-963773188" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+            <a href="https://github.com/Wolf1904" target="_blank" class="btn-ghost">GitHub ↗</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <span class="footer-logo">Rachit Agarwal</span>
+    <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Rachit</span>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+
 </body>
 </html>
