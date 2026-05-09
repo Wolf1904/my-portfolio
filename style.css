@@ -499,6 +499,11 @@ section {
     margin-bottom: .75rem;
 }
 
+.card-icon {
+    width: 25px;
+    height: 25px;
+}
+
 .about-card h3 {
     font-family: var(--serif);
     font-weight: 600;
