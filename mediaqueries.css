@@ -1,4 +1,4 @@
-/* ── TABLET (≤ 1024px) ───────────────────────────────── */
+/*  TABLET (≤ 1024px)  */
 @media (max-width: 1024px) {
     section,
     #experience > .inner,
@@ -39,7 +39,7 @@
     }
 }
 
-/* ── MOBILE (≤ 768px) ────────────────────────────────── */
+/*  MOBILE (≤ 768px)  */
 @media (max-width: 768px) {
     section,
     #experience > .inner,
@@ -93,7 +93,7 @@
     .hero-scroll-hint { display: none; }
 }
 
-/* ── SMALL MOBILE (≤ 480px) ──────────────────────────── */
+/*  SMALL MOBILE (≤ 480px)  */
 @media (max-width: 480px) {
     .hero-name { font-size: 2.5rem; }
 
@@ -113,7 +113,7 @@
     .contact-links { flex-direction: column; align-items: center; }
 }
 
-/* ── TOUCH DEVICES ───────────────────────────────────── */
+/*  TOUCH DEVICES  */
 @media (pointer: coarse) {
     .cur-ring,
     .cur-dot {

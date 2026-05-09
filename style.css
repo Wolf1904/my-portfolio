@@ -1,4 +1,4 @@
-/* ── RESET & TOKENS ─────────────────────────────────── */
+/*  RESET & TOKENS  */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap');
 
 *, *::before, *::after {
@@ -41,7 +41,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── GRAIN TEXTURE ──────────────────────────────────── */
+/*  GRAIN TEXTURE  */
 body::before {
     content: '';
     position: fixed;
@@ -54,12 +54,12 @@ body::before {
     background-size: 200px;
 }
 
-/* ── SCROLLBAR ───────────────────────────────────────── */
+/*  SCROLLBAR  */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--paper-2); }
 ::-webkit-scrollbar-thumb { background: var(--cream); border-radius: 99px; }
 
-/* ── CUSTOM CURSOR ───────────────────────────────────── */
+/*  CUSTOM CURSOR  */
 .cur-ring {
     position: fixed;
     width: 40px;
@@ -95,7 +95,7 @@ body::before {
     height: 25px;
 }
 
-/* ── NAV ─────────────────────────────────────────────── */
+/*  NAV  */
 nav#main-nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -159,7 +159,7 @@ nav#main-nav.scrolled {
 .nav-links a:hover { color: var(--ink); }
 .nav-links a:hover::after { width: 100%; }
 
-/* ── HAMBURGER ───────────────────────────────────────── */
+/*  HAMBURGER  */
 #hamburger-btn {
     display: none;
     flex-direction: column;
@@ -182,7 +182,7 @@ nav#main-nav.scrolled {
 #hamburger-btn.open span:nth-child(2) { opacity: 0; width: 0; }
 #hamburger-btn.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
-/* ── MOBILE MENU ─────────────────────────────────────── */
+/*  MOBILE MENU  */
 #mobile-menu {
     display: none;
     position: fixed;
@@ -208,7 +208,7 @@ nav#main-nav.scrolled {
 
 #mobile-menu a:hover { color: var(--accent); }
 
-/* ── SECTIONS COMMON ────────────────────────────────── */
+/*  SECTIONS COMMON  */
 section {
     padding: 7rem 8rem;
     max-width: 1400px;
@@ -258,7 +258,7 @@ section {
     margin: 0;
 }
 
-/* ── HERO ────────────────────────────────────────────── */
+/*  HERO  */
 #hero {
     min-height: 100vh;
     display: flex;
@@ -325,7 +325,7 @@ section {
     flex-wrap: wrap;
 }
 
-/* ── BUTTONS ─────────────────────────────────────────── */
+/*  BUTTONS  */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -376,7 +376,7 @@ section {
     transform: translateY(-2px);
 }
 
-/* ── HERO IMAGE ──────────────────────────────────────── */
+/*  HERO IMAGE  */
 .hero-image {
     flex-shrink: 0;
     width: clamp(220px, 28vw, 360px);
@@ -443,7 +443,7 @@ section {
     50%       { transform: translateX(-50%) translateY(-6px); }
 }
 
-/* ── ABOUT ───────────────────────────────────────────── */
+/*  ABOUT  */
 #about { padding-top: 6rem; }
 
 .about-grid {
@@ -529,7 +529,7 @@ section {
     font-weight: 600;
 }
 
-/* ── EXPERIENCE ──────────────────────────────────────── */
+/*  EXPERIENCE  */
 #experience {
     background: var(--paper-2);
     max-width: 100%;
@@ -629,7 +629,7 @@ section {
     font-weight: 600;
 }
 
-/* ── EDUCATION ───────────────────────────────────────── */
+/*  EDUCATION  */
 .edu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -688,7 +688,7 @@ section {
     line-height: 1.5;
 }
 
-/* ── COURSEWORKS ─────────────────────────────────────── */
+/*  COURSEWORKS  */
 #courseworks {
     background: var(--paper-2);
     max-width: 100%;
@@ -764,7 +764,7 @@ section {
 
 .cert-footer a:hover { color: var(--ink); }
 
-/* ── SKILLS ──────────────────────────────────────────── */
+/*  SKILLS  */
 .skills-group { margin-bottom: 3.5rem; }
 .skills-group:last-child { margin-bottom: 0; }
 
@@ -824,7 +824,7 @@ section {
     filter: invert(1) brightness(2);
 } */
 
-/* ── PROJECTS ────────────────────────────────────────── */
+/*  PROJECTS  */
 #projects {
     background: var(--paper-2);
     max-width: 100%;
@@ -922,7 +922,7 @@ section {
     border-radius: 99px;
 }
 
-/* ── CONTACT ─────────────────────────────────────────── */
+/*  CONTACT  */
 #contact {
     text-align: center;
     padding-top: 7rem;
@@ -959,7 +959,7 @@ section {
     margin-bottom: 4rem;
 }
 
-/* ── FOOTER ──────────────────────────────────────────── */
+/*  FOOTER  */
 footer {
     border-top: 1px solid var(--line);
     padding: 2rem 8rem;
@@ -1001,7 +1001,7 @@ footer {
     color: var(--ink-muted);
 }
 
-/* ── SCROLL TO TOP ───────────────────────────────────── */
+/*  SCROLL TO TOP  */
 #scroll-top {
     position: fixed;
     bottom: 2rem;
@@ -1034,7 +1034,7 @@ footer {
     background: var(--accent-dk);
 }
 
-/* ── REVEAL ANIMATION ────────────────────────────────── */
+/*  REVEAL ANIMATION  */
 .reveal {
     opacity: 0;
     transform: translateY(24px);

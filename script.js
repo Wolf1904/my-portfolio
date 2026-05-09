@@ -1,4 +1,4 @@
-/* ── TYPING EFFECT ───────────────────────────────────── */
+/*  TYPING EFFECT  */
 (function () {
     const el = document.getElementById('typed-role');
     if (!el) return;
@@ -47,7 +47,7 @@
     setTimeout(tick, 700);
 })();
 
-/* ── CUSTOM CURSOR ───────────────────────────────────── */
+/*  CUSTOM CURSOR  */
 (function () {
     const ring = document.getElementById('curRing');
     const dot  = document.getElementById('curDot');
@@ -80,7 +80,7 @@
     document.addEventListener('mouseup',   () => ring.classList.remove('clicked'));
 })();
 
-/* ── NAV SCROLL SHRINK + SCROLL-TO-TOP VISIBILITY ───── */
+/*  NAV SCROLL SHRINK + SCROLL-TO-TOP VISIBILITY  */
 (function () {
     const mainNav   = document.getElementById('main-nav');
     const scrollBtn = document.getElementById('scroll-top');
@@ -91,7 +91,7 @@
     });
 })();
 
-/* ── HAMBURGER MENU ──────────────────────────────────── */
+/*  HAMBURGER MENU  */
 (function () {
     const btn  = document.getElementById('hamburger-btn');
     const menu = document.getElementById('mobile-menu');
@@ -110,14 +110,14 @@
     });
 })();
 
-/* ── SCROLL TO TOP ───────────────────────────────────── */
+/*  SCROLL TO TOP  */
 (function () {
     const btn = document.getElementById('scroll-top');
     if (!btn) return;
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
-/* ── REVEAL ON SCROLL ────────────────────────────────── */
+/*  REVEAL ON SCROLL  */
 (function () {
     const els = document.querySelectorAll('.reveal');
     if (!els.length) return;
