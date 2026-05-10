@@ -1,3 +1,7 @@
+/* ====================================================
+   MEDIA QUERIES — Coding Theme
+   ==================================================== */
+
 /*  TABLET (≤ 1024px)  */
 @media (max-width: 1024px) {
     section,
@@ -61,18 +65,18 @@
         margin: 0 auto;
     }
 
-    .hero-name { font-size: 3rem; }
+    .hero-name { font-size: 2.2rem; }
 
     .nav-links { display: none; }
 
     #hamburger-btn { display: flex; }
 
     nav#main-nav {
-        padding: 1rem 1.5rem;
+        padding: .9rem 1.5rem;
     }
 
     nav#main-nav.scrolled {
-        padding: .75rem 1.5rem;
+        padding: .6rem 1.5rem;
     }
 
     footer {
@@ -95,11 +99,11 @@
 
 /*  SMALL MOBILE (≤ 480px)  */
 @media (max-width: 480px) {
-    .hero-name { font-size: 2.5rem; }
+    .hero-name { font-size: 1.8rem; }
 
-    .section-title { font-size: 2rem; }
+    .section-title { font-size: 1.6rem; }
 
-    .contact-big { font-size: 2rem; }
+    .contact-big { font-size: 1.8rem; }
 
     .projects-grid { grid-template-columns: 1fr; }
 
